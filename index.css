@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    /* border: 1px solid black ; */
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+main {
+    display: table;
+    max-width: 1150px;
+    min-width: 100px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(242, 242, 242);
+    border-radius: 50px 50px 0 0 ;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 8px rgba(197, 197, 197, 0.81);
+    text-align: center;
+}
+
+h1 {
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgba(85, 85, 85, 0.918);
+    font-size: 40px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    color: rgb(144, 147, 149);
+}
+
+section {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+img {
+    margin-left: 45px;
+}
+
+.quadro {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 470px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+}
+
+.quadro:hover {
+    box-shadow: 1px 0px 8px rgba(197, 197, 197, 0.81);
+    transition: 0.5s;
+}
+.titulo-caixa {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgba(85, 85, 85, 0.918);
+    font-size: 15px;
+    margin: 20px 0 0 23px;
+}
+
+ul {
+ margin: 20px 0 0 10px;
+ position: absolute;
+ text-align: center;
+ font-family: 'Merriweather Sans', sans-serif;
+ font-size: 13px;
+ font-weight: 600;
+ color: rgba(0, 0, 0, 0.817);
+}
+
+input {
+    padding: 2px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(1, 1, 1, 0.337);
+    
+}
+
+button {
+    background-color: transparent;
+    border: solid 1px rgba(212, 211, 211, 0.808);
+    padding: 8px 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+button:disabled {
+    border: none;
+    color: transparent;
+}
+
+button:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+
+.resultado{
+    padding-top: 25px;
+    box-sizing: border-box;
+    height: 20px;
+    
+}
+
