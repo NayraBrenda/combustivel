@@ -29,7 +29,7 @@ function calcularQuadro2() {
     if(kmRodados.value == '' && litrosAbastecidos.value == '') {
         window.alert('Preencha os campos')    
     } else {
-        resultado2.innerHTML = `O veículo fará <b>${resultado}</b> km/l.`
+        resultado2.innerHTML = `O veículo fará <b>${resultado.toFixed(2).replace('.', ',')}</b> km/l.`
     }
 }
 
@@ -72,7 +72,7 @@ function calcularQuadro4() {
     if(valorAbastecimento.value == '' && precoCombustivel.value == ''){
         window.alert('Preencha os campos')
     } else {
-    return resultado4.innerHTML = `Você abastecerá <b>${resultado.toFixed(2)}</b> litros.`
+    return resultado4.innerHTML = `Você abastecerá <b>${resultado.toFixed(2).replace('.', ',')}</b> litros.`
     }
 }
 

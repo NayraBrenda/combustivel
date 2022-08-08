@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,77 +9,68 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 </head>
+
 <body>
 
     <main>
-            <h1>Combustível</h1>
-            <h2 class="subtitulo">Calcule a média desejada.</h2>
+        <h1>Combustível</h1>
+        <h2 class="subtitulo">Calcule a média desejada.</h2>
 
-            <section>
-                    <div class="quadro">
-                        <img src="imagens/bombagasolina.png" alt="imagemcombustivel">
-                        <h2 class="titulo-caixa">Álcool ou Gasolina?</h2>
-                        <div class="conteudo">
-                            <ul>
-                                <li><label for="alcool">Preço do Álcool:</label></li>
-                                <li><input type="number" id="alcool" onkeypress="habilitarLimparQuadro1()"></li>
-                                <li><label for="gasolina">Preço da Gasolina:</label></li>
-                                <li><input type="number" id="gasolina" onkeypress="habilitarLimparQuadro1()"></li>
-                                <li><button class="calcular-quadro-1" onclick="calcularQuadro1()">calcular</button></li>
-                                <li><button class="limpar-quadro-1" onclick="limparCamposQuadro1()" id="botaoLimpar1" disabled>limpar</button></li>
-                                <li><div id="resultado1" class="resultado"></div></li>
-                            </ul>
-                        </div>    
-                    </div>
-                    <div class="quadro">
-                        <img src="imagens/velocimetro.png" alt="velocimetro">
-                        <h2 class="titulo-caixa">Média de Km por Litro</h2>
-                        <div class="conteudo">
-                            <ul>
-                                <li><label for="kmRodados">Km Rodados:</label></li>
-                                <li><input type="number" id="kmRodados" onkeypress="habilitarLimparQuadro2()"></li>
-                                <li><label for="litrosAbastecidos">Litros abastecidos</label></li>
-                                <li><input type="number" id="litrosAbastecidos" onkeypress="habilitarLimparQuadro2()"></li>
-                                <li><button class="calcular-quadro-2" onclick="calcularQuadro2()">calcular</button></li>
-                                <li><button class="limpar-quadro-2" onclick="limparCamposQuadro2()" id="botaoLimpar2" disabled>limpar</button></li>
-                                <li><div id="resultado2" class="resultado"></div></li>   
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="quadro">
-                        <img src="imagens/cifrao.png" alt="cifrao">
-                        <h2 class="titulo-caixa">Custo do percurso</h2>
-                        <div class="conteudo">
-                            <ul>
-                                <li><label for="percurso">Percurso(km):</label></li>
-                                <li><input type="number" id="percurso" onkeypress="habilitarLimparQuadro3()"></li>
-                                <li><label for="consumoDoVeiculo">Consumo do veículo(km/l)</label></li>
-                                <li><input type="number" id="consumoDoVeiculo" onkeypress="habilitarLimparQuadro3()"></li>
-                                <li><label for="precoDoCombustivel">Preço do combustível:</label></li>
-                                <li><input type="number" id="precodoCombustivel" onkeypress="habilitarLimparQuadro3()"></li>
-                                <li><button class="calcular-quadro-2" onclick="calcularQuadro3()">calcular</button></li>
-                                <li><button class="limpar-quadro-3" onclick="limparCamposQuadro3()" id="botaoLimpar3" disabled>limpar</button></li>
-                                <li><div id="resultado3" class="resultado"></div></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="quadro">
-                        <img src="imagens/galao.png" alt="cifrao">
-                        <h2 class="titulo-caixa">Média de Km por Litro</h2>
-                        <div class="conteudo">
-                            <ul>
-                                <li><label for="valorAbastecimento">Valor a abastecer:</label></li>
-                                <li><input type="number" id="valorAbastecimento" onkeypress="habilitarLimparQuadro4()"></li>
-                                <li><label for="precoCombustivel">Preço do combustível:</label></li>
-                                <li><input type="number" id="precoCombustivel" onkeypress="habilitarLimparQuadro4()"></li>
-                                <li><button class="calcular-quadro-2" onclick="calcularQuadro4()">calcular</button></li>
-                                <li><button class="limpar-quadro-4" onclick="limparCamposQuadro4()" id="botaoLimpar4" disabled>limpar</button></li>
-                                <li><div id="resultado4" class="resultado"></div></li>  
-                            </ul>
-                        </div>
-                    </div>
-            </section>
+        <section>
+            <ul>
+                <li class="quadro">
+                    <img src="imagens/bombagasolina.png" alt="imagemcombustivel">
+                    <h2 class="titulo-caixa">Álcool ou Gasolina?</h2>
+                    <label for="alcool">Preço do Álcool:</label>
+                    <input type="number" id="alcool" onkeypress="habilitarLimparQuadro1()">
+                    <label for="gasolina">Preço da Gasolina:</label>
+                    <input type="number" id="gasolina" onkeypress="habilitarLimparQuadro1()">
+                    <button class="calcular-quadro-1 calcular" onclick="calcularQuadro1()">calcular</button>
+                    <button class="limpar-quadro-1" onclick="limparCamposQuadro1()" id="botaoLimpar1"disabled>limpar</button>
+                    <div id="resultado1" class="resultado"></div>
+                </li>  
+
+                <li class="quadro">
+                    <img src="imagens/velocimetro.png" alt="velocimetro">
+                    <h2 class="titulo-caixa">Média de Km por Litro</h2>
+                    <label for="kmRodados">Km Rodados:</label>
+                    <input type="number" id="kmRodados" onkeypress="habilitarLimparQuadro2()">
+                    <label for="litrosAbastecidos">Litros abastecidos</label>
+                    <input type="number" id="litrosAbastecidos" onkeypress="habilitarLimparQuadro2()">
+                    <button class="calcular-quadro-2 calcular" onclick="calcularQuadro2()">calcular</button>
+                    <button class="limpar-quadro-2" onclick="limparCamposQuadro2()" id="botaoLimpar2" disabled>limpar</button>
+                    <div id="resultado2" class="resultado"></div>
+                </li>
+
+                <li class="quadro">
+                    <img src="imagens/cifrao.png" alt="cifrao">
+                    <h2 class="titulo-caixa">Custo do percurso</h2>
+                    <label for="percurso">Percurso(km):</label>
+                    <input type="number" id="percurso" onkeypress="habilitarLimparQuadro3()">
+                    <label for="consumoDoVeiculo">Consumo do veículo(km/l)</label>
+                    <input type="number" id="consumoDoVeiculo" onkeypress="habilitarLimparQuadro3()">
+                    <label for="precoDoCombustivel">Preço do combustível:</label>
+                    <input type="number" id="precodoCombustivel" onkeypress="habilitarLimparQuadro3()">
+                    <button class="calcular-quadro-3 calcular" onclick="calcularQuadro3()">calcular</button>
+                    <button class="limpar-quadro-3" onclick="limparCamposQuadro3()" id="botaoLimpar3" disabled>limpar</button>
+                    <div id="resultado3" class="resultado"></div>
+                </li>   
+
+                <li class="quadro">
+                    <img src="imagens/galao.png" alt="cifrao">
+                    <h2 class="titulo-caixa">Média de Km por Litro</h2>
+                    <label for="valorAbastecimento">Valor a abastecer:</label>
+                    <input type="number" id="valorAbastecimento" onkeypress="habilitarLimparQuadro4()">
+                    <label for="precoCombustivel">Preço do combustível:</label>
+                    <input type="number" id="precoCombustivel" onkeypress="habilitarLimparQuadro4()">
+                    <button class="calcular-quadro-4 calcular" onclick="calcularQuadro4()">calcular</button>
+                    <button class="limpar-quadro-4" onclick="limparCamposQuadro4()" id="botaoLimpar4" disabled>limpar</button>
+                    <div id="resultado4" class="resultado"></div>
+                </li>
+            </ul>
+        </section>
     </main>
-    
+
 </body>
+
 </html>

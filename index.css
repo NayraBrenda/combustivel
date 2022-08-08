@@ -45,16 +45,12 @@ section {
     display: inline-block;
 }
 
-img {
-    margin-left: 45px;
-}
-
 .quadro {
-    float: left;
-    padding: 10px;
+    padding: 30px;
     margin: 10px;
     box-sizing: border-box;
-    width: 220px;
+    max-width: 260px;
+    width: 240px;
     height: 470px;
     border-radius: 15px;
     background-color: #fff;
@@ -69,25 +65,28 @@ img {
     font-family: 'Merriweather Sans', sans-serif;
     color: rgba(85, 85, 85, 0.918);
     font-size: 15px;
-    margin: 20px 0 0 23px;
+    padding: 20px 0;
 }
 
 ul {
- margin: 20px 0 0 10px;
- position: absolute;
- text-align: center;
- font-family: 'Merriweather Sans', sans-serif;
- font-size: 13px;
- font-weight: 600;
- color: rgba(0, 0, 0, 0.817);
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+     font-weight: 600;
+    color: rgba(0, 0, 0, 0.817);
 }
 
 input {
-    padding: 2px;
+    padding: 4px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid rgba(1, 1, 1, 0.337);
     
+}
+
+input:focus {
+    outline: 0;
 }
 
 button {
@@ -99,7 +98,8 @@ button {
     cursor: pointer;
     font-size: 10px;
     font-weight: 600;
-    margin-top: 10px;
+    margin: 10px auto;
+    display: block;
 }
 
 button:disabled {
@@ -107,15 +107,37 @@ button:disabled {
     color: transparent;
 }
 
-button:hover {
+.calcular:hover {
     background-color: rgb(236, 236, 236);
 }
 
 
-.resultado{
+.resultado {
     padding-top: 25px;
     box-sizing: border-box;
     height: 20px;
     
 }
 
+@media (max-width: 800px) {
+    .quadro {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .conteudo ul {
+        position: relative;
+    }
+    main {
+        width: 90%;
+        margin-top: 20px;
+    }
+    section {
+        width: 100%;
+    }
+}
+
+@media (min-width:801px) {
+    .quadro {
+        float: left;
+    }
+}
